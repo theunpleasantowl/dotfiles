@@ -1,0 +1,38 @@
+{
+  LargeDisplayFont = "Ubuntu\\-Title:slant=0:weight=80:width=100:pixelsize=20";
+  HighlightColor = "#447bcd";
+  MenuTextExtendSpace = "-1";
+  FTitleColor = "#ffffff";
+  MenuTitleExtendSpace = "-1";
+  MenuTextFont = "DejaVu Sans Ultra-Light:slant=0:weight=80:width=100:pixelsize=11";
+  WorkspaceBack = (spixmap, "stOrmblue.jpg", gray20);
+  UTitleBack = (spixmap, Inactive.png, white);
+  NormalCursor = (builtin, left_ptr);
+  IconTitleFont = "Arial:slant=0:weight=80:width=100:pixelsize=9";
+  PTitleBack = (spixmap, Parent.png, white);
+  MoveCursor = (bitmap, dot_move.xbm, dot_move_mask.xbm);
+  WindowTitleFont = "Ubuntu\\-Title:slant=0:weight=80:width=100:pixelsize=16";
+  UTitleColor = "#5576aa";
+  MenuDisabledColor = "#666666";
+  ClipTitleFont = "Ubuntu\\-Title:slant=0:weight=80:width=100:pixelsize=12";
+  MenuStyle = flat;
+  MenuTextBack = (solid, "#f5f5f5");
+  ResizeCursor = (bitmap, dot_resize.xbm, dot_resize_mask.xbm);
+  PTitleColor = "#ffffff";
+  IconBack = (spixmap, BlueTile.png, white);
+  MenuTitleBack = (spixmap, Active.png, white);
+  DisplayFont = "Trebuchet MS,Luxi Sans:pixelsize=12";
+  FTitleBack = (spixmap, Active.png, white);
+  WindowTitleExtendSpace = "-1";
+  TitleJustify = center;
+  CClipTitleColor = "#152a50";
+  ResizebarBack = (spixmap, Active.png, white);
+  MenuTextColor = "#000000";
+  ClipTitleColor = "#f0f2f7";
+  IconTitleBack = "#a0bdd9";
+  HighlightTextColor = "#ffffff";
+  WaitCursor = (bitmap, dot_wait.xbm, dot_wait_mask.xbm);
+  IconTitleColor = white;
+  MenuTitleFont = "Ubuntu\\-Title:slant=0:weight=80:width=100:pixelsize=14";
+  MenuTitleColor = "#ffffff";
+}

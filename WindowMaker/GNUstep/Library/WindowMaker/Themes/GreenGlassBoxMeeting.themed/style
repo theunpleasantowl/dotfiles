@@ -1,0 +1,35 @@
+{
+  LargeDisplayFont = "lucida sans-28";
+  HighlightColor = "#fff9d2";
+  MenuTextExtendSpace = 0;
+  FTitleColor = "#fdfff7";
+  MenuTitleExtendSpace = 0;
+  MenuTextFont = "Verdana:slant=0:weight=80:width=100:pixelsize=12";
+  WorkspaceBack = (tpixmap,"GreenGlasBoxMeeting.jpeg",gray20);
+  UTitleBack = (spixmap,"title2.png","#454f45");
+  NormalCursor = (builtin, left_ptr);
+  IconTitleFont = "Verdana:slant=0:weight=80:width=100:pixelsize=8";
+  PTitleBack = (spixmap,"title2.png","#454f45");
+  WindowTitleFont = "Verdana:slant=0:weight=200:width=100:pixelsize=13";
+  UTitleColor = "#d4ba88";
+  MenuDisabledColor = "#c6d800";
+  ClipTitleFont = "Verdana:slant=0:weight=80:width=100:pixelsize=10";
+  MenuStyle = flat;
+  MenuTextBack = (spixmap,"menuback.png","#454f45");
+  PTitleColor = "#fdfff7";
+  IconBack = (spixmap,"iconback.xpm","#454f45");
+  MenuTitleBack = ( spixmap,"menutitleback.xpm","#454f45");
+  DisplayFont = "helvetica:pixelsize=12";
+  FTitleBack = (spixmap,"title2.png","#454f45");
+  WindowTitleExtendSpace = 0;
+  TitleJustify = center;
+  CClipTitleColor = "#454f45";
+  ResizebarBack = (spixmap,"title2.png","#454f45");
+  MenuTextColor = "#fdf0ca";
+  ClipTitleColor = "#ded2b1";
+  IconTitleBack =  "#8f8b70";
+  HighlightTextColor = "#120b05";
+  IconTitleColor = "#fef2cc";
+  MenuTitleFont = "Verdana:slant=0:weight=200:width=100:pixelsize=12";
+  MenuTitleColor = "#fff9d2";
+}

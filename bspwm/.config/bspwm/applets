@@ -1,0 +1,23 @@
+#! /bin/bash
+
+if ! pgrep -x "clipit" > /dev/null; then
+	clipit &
+fi
+if ! pgrep -x "xfce4-power-manager" > /dev/null; then
+        xfce4-power-manager &
+fi
+if ! pgrep -x "volumeicon" > /dev/null; then
+	volumeicon &
+fi
+if ! pgrep -x "ibus-daemon" > /dev/null; then
+	ibus-daemon -x &
+fi
+if ! pgrep -x "nm-applet" > /dev/null; then
+	nm-applet &
+fi
+if ! pgrep -x "polkit-gnome-au" > /dev/null; then
+	/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+fi
+if ! pgrep -x "redshiftgui" > /dev/null; then
+	redshiftgui -min &
+fi

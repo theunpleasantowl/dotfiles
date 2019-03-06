@@ -1,0 +1,44 @@
+###
+# wm independent hotkeys
+###
+
+# Bin System
+Print
+	screensnap
+control + @Print
+	screensnap crop
+super + c
+	qrsend $(rofi -dmenu)
+
+# Lock System
+ctrl + alt + Delete
+	rofi-powermenu
+
+# General Programs
+super + t
+	urxvt
+super + n
+	urxvt -g 110x50 -e ncmpcpp
+super +  m
+	mpv --player-operation-mode=pseudo-gui
+super +  e
+	thunar
+XF86Calculator
+	galculator
+
+# rofi launcher
+super + {r, @space}
+	rofi -show drun -show-icons
+super + w
+	cd ~/Pictures/Wallpapers/ && \
+	feh --bg-fill "$(find * | rofi -dmenu)"
+#super + alt +
+#	rofi -show window
+
+# mpd controls
+XF86Audio{Prev,Next,Play}
+	notify_mpd -{p,n,t}
+
+# make sxhkd reload its configuration files:
+super + Escape
+	pkill -USR1 -x sxhkd

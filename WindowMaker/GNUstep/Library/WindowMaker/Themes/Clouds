@@ -1,0 +1,56 @@
+{
+  FrameBorderColor = "#000000";
+  FTitleColor = white;
+  MenuTitleBack = (solid, black);
+  MenuDisabledColor = gray40;
+  IconTitleBack = black;
+  FTitleBack = (solid, black);
+  ClipTitleFont = "Verdana:bold:pixelsize=10";
+  ClipTitleColor = black;
+  WaitCursor = (
+    bitmap,
+    "~/GNUstep/Library/WindowMaker/Themes/Lumen_Blue.themed/dot_wait.xbm",
+    "~/GNUstep/Library/WindowMaker/Themes/Lumen_Blue.themed/dot_wait_mask.xbm"
+  );
+  FrameFocusedBorderColor = "#000000";
+  IconTitleFont = "Arial,sans serif:pixelsize=9";
+  HighlightColor = white;
+  WindowTitleFont = "Trebuchet MS,sans serif:bold:pixelsize=12";
+  MenuTextBack = (solid, "rgb:aa/aa/aa");
+  LargeDisplayFont = "Trebuchet MS,sans serif:pixelsize=24";
+  ResizeCursor = (
+    bitmap,
+    "~/GNUstep/Library/WindowMaker/Themes/Lumen_Blue.themed/dot_resize.xbm",
+    "~/GNUstep/Library/WindowMaker/Themes/Lumen_Blue.themed/dot_resize_mask.xbm"
+  );
+  CClipTitleColor = gray20;
+  MoveCursor = (
+    bitmap,
+    "~/GNUstep/Library/WindowMaker/Themes/Lumen_Blue.themed/dot_move.xbm",
+    "~/GNUstep/Library/WindowMaker/Themes/Lumen_Blue.themed/dot_move_mask.xbm"
+  );
+  MenuStyle = normal;
+  ResizebarBack = (solid, "rgb:aa/aa/aa");
+  IconTitleColor = white;
+  TitleJustify = center;
+  MenuTextColor = black;
+  MenuTextExtendSpace = "-1";
+  PTitleBack = (solid, gray40);
+  IconBack = (dgradient, "rgb:a6/a6/b6", "rgb:51/55/61");
+  MenuTitleColor = white;
+  UTitleColor = black;
+  MenuTitleFont = "Trebuchet MS,sans serif:bold:pixelsize=12";
+  UTitleBack = (solid, "rgb:aa/aa/aa");
+  WindowTitleExtendSpace = "-1";
+  NormalCursor = (builtin, left_ptr);
+  PTitleColor = white;
+  MenuTitleExtendSpace = "-1";
+  MenuTextFont = "Trebuchet MS,sans serif:pixelsize=12";
+  WorkspaceBack = (
+    spixmap,
+    "/home/nep/Pictures/Wallpapers/Regular Wallpapers/FRU6WXRGJQED7GW.LARGE.jpg",
+    "#333333"
+  );
+  FrameSelectedBorderColor = "#ededed";
+  HighlightTextColor = black;
+}

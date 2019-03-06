@@ -1,0 +1,27 @@
+# rofi configuration
+rofi.columns: 2
+rofi.font: SF Pro Display 13
+rofi.color-window: argb:cc000000, #e35b5b
+rofi.color-normal: argb:00000000, #ffffffff, argb:00000000, argb:00000000, #e35b5b
+rofi.width: 380
+rofi.lines: 18
+rofi.bw: 1
+rofi.padding: 50
+rofi.line-margin: 5
+rofi.separator-style: none
+rofi.hide-scrollbar: true
+rofi.show-icons true
+rofi.modi: drun
+rofi.xoffset: -700
+rofi.yoffset: 162
+rofi.show-match: false
+columns: 2
+
+
+#rofi.theme: ~/.config/rofi/gab-blue.rasi
+
+# Dark theme.
+#rofi.theme: ~/.cache/wal/colors-rofi-dark.rasi
+
+# Light theme.
+#rofi.theme: ~/.cache/wal/colors-rofi-light.rasi

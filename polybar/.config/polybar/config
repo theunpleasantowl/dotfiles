@@ -1,0 +1,219 @@
+[colors]
+background = ${xrdb:background:#222}
+foreground = ${xrdb:foreground:#222}
+foreground-alt = ${xrdb:color3:#222}
+primary = ${xrdb:color6:#222}
+secondary = ${xrdb:color7:#222}
+alert = ${xrdb:color1:#222}
+;UNUSED
+;modules_bg = #6D8EC1
+;modules_fg = #F0F0F0
+;modules_prefix_bg = #F0F0F0
+;modules_prefix_fg = #1d1f21
+
+[bar/top]
+monitor = ${env:MONITOR}
+width = 100%
+height = 18
+wm-restack = bspwm
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+line-color = ${colors.primary}
+line-size = 6
+
+spacing = 0
+padding-left= 1
+padding-right = 1
+module-margin-left=2
+
+font-0 = xos4 Terminus:size=8:antialias=false;0
+font-1 = MaterialIcons:size=12:antialias=false;3
+font-2 = Source Han Sans Medium:size=10;0
+
+modules-left = mpd
+modules-center= bspwm
+modules-right = backlight cpu memory battery date
+tray-position = right
+
+[module/bspwm]
+type = internal/bspwm
+module-margin-left = 4
+module-margin-right = 4
+label-focused = %name%
+label-focused-foreground = ${colors.background}
+label-focused-background = ${colors.primary}
+label-focused-padding = 1
+
+label-occupied = %name%
+
+label-occupied-foreground = ${colors.alert}
+label-occupied-padding = 1
+
+label-urgent = %name%
+label-urgent-background = ${colors.alert}
+label-urgent-padding = 1
+
+label-empty = %name%
+label-empty-foreground = ${colors.foreground}
+label-empty-padding = 1
+
+label-separator = |
+label-separator-padding = 2
+label-separator-foreground = ${colors.foreground-alt}
+
+[module/mpd]
+type = internal/mpd
+format-online = <icon-prev> <icon-stop> <toggle> <icon-next>  <icon-repeat> <icon-random>  <bar-progress> <label-time>  <label-song>
+label-offline = 🎜 mpd is offline
+
+icon-play  = 
+icon-pause = 
+icon-stop  = 
+icon-prev  = 
+icon-next  = 
+icon-random = 
+icon-repeat = 
+
+toggle-on-foreground = ${colors.primary}
+toggle-off-foreground = ${colors.foreground}
+
+bar-progress-width = 30
+bar-progress-format = %{A4:mpdseek+2: A5:mpdseek-2:}%fill%%indicator%%empty%%{A A}
+bar-progress-indicator = |
+bar-progress-indicator-foreground = ${colors.foreground}
+bar-progress-indicator-font = 0
+bar-progress-fill = ─
+bar-progress-fill-foreground = ${colors.primary}
+bar-progress-fill-font = 0
+bar-progress-empty = ─
+bar-progress-empty-font = 0
+bar-progress-empty-foreground = ${colors.secondary}
+
+[module/wireless-network]
+type = internal/network
+interface = wlp3s0
+interval = 3.0
+ping-interval = 10
+
+format-connected = <ramp-signal> <label-connected>
+label-connected = %essid%
+label-disconnected =    not connected
+label-disconnected-foreground = ${colors.foreground-alt}
+
+ramp-signal-0 = 
+ramp-signal-1 = 
+ramp-signal-2 = 
+ramp-signal-3 = 
+ramp-signal-4 = 
+
+animation-packetloss-0 = 
+animation-packetloss-0-foreground = #ffa64c
+animation-packetloss-1 = 
+animation-packetloss-1-foreground = ${bar/top.foreground}
+animation-packetloss-framerate = 500
+
+[module/wired-network]
+type = internal/network
+interface = eno1
+interval = 3.0
+
+label-connected =    %{T3}%local_ip%%{T-}
+label-disconnected-foreground = #66
+
+[module/volume]
+type = internal/pulseaudio
+speaker-mixer = Speaker
+headphone-mixer = Headphone
+headphone-id = 9
+
+format-volume = <ramp-volume> <label-volume>
+label-muted =   muted
+label-muted-foreground = #66
+
+ramp-volume-0 = 
+ramp-volume-1 = 
+ramp-volume-2 = 
+ramp-volume-3 = 
+
+[module/backlight]
+type = internal/xbacklight
+format = <ramp> <bar>
+
+ramp-0 = 
+ramp-1 = 
+ramp-2 = 
+
+bar-width = 10
+bar-indicator = |
+bar-indicator-font = 0
+bar-indicator-foreground = #ff
+bar-fill = ─
+bar-fill-font = 0
+bar-fill-foreground = ${colors.primary}
+bar-empty = ─
+bar-empty-font = 0
+bar-empty-foreground = ${colors.secondary}
+
+[module/cpu]
+type = internal/cpu
+
+; Seconds to sleep between updates
+; Default: 1
+interval = 2
+
+vailable tags:
+;   <label> (default)
+;   <bar-load>
+;   <ramp-load>
+;   <ramp-coreload>
+format = <label>
+format-prefix = " "
+
+; Available tokens:
+;   %percentage% (default) - total cpu load averaged over all cores
+;   %percentage-sum% - Cumulative load on all cores
+;   %percentage-cores% - load percentage for each core
+;   %percentage-core[1-9]% - load percentage for specific core
+label = "%percentage%%"
+
+
+[module/memory]
+type = internal/memory
+format = <label>
+format-prefix = " "
+
+[module/battery]
+type = internal/battery
+full-at = 99
+
+format-charging = <animation-charging> <label-charging>
+label-charging = %percentage%% (%time%)
+
+format-discharging = <ramp-capacity> <label-discharging>
+label-discharging = %percentage%%
+
+format-full = <label-full>
+format-full-prefix = " "
+
+ramp-capacity-0 = 
+ramp-capacity-1 = 
+ramp-capacity-2 = 
+ramp-capacity-3 = 
+ramp-capacity-4 = 
+
+ramp-capacity-0-foreground = ${colors.foreground}
+ramp-capacity-foreground   = ${colors.foreground}
+
+animation-charging-0 = ""
+animation-charging-1 = ""
+animation-charging-2 = ""
+animation-charging-3 = ""
+animation-charging-4 = ""
+animation-charging-framerate = 750
+
+[module/date]
+type = internal/date
+date =  %%{F#99}%Y-%m-%d%%{F-}  %%{F#fff}%l:%M%p%%{F-}
+date-alt = %%{F#fff}%A, %d %B %Y  %%{F#fff}%H:%M%%{F#666}:%%{F#fba922}%S%%{F-}

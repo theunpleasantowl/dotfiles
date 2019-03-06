@@ -1,0 +1,35 @@
+{
+  LargeDisplayFont = "Trebuchet MS,Luxi Sans:pixelsize=24";
+  HighlightColor = "#9ba9c9";
+  MenuTextExtendSpace = 0;
+  FTitleColor = "#000000";
+  MenuTitleExtendSpace = 0;
+  MenuTextFont = "sans serif:slant=0:weight=100:width=100:pixelsize=12";
+  WorkspaceBack = (tpixmap, Purple.jpg, gray20);
+  UTitleBack = (tpixmap, "QNiX-title-inactive.png", "#000000");
+  NormalCursor = (builtin, left_ptr);
+  IconTitleFont = "Bitstream Vera Sans:slant=0:weight=80:width=100:pixelsize=8";
+  PTitleBack = (tpixmap, "QNiX-title-inactive.png", "#000000");
+  WindowTitleFont = "sans serif:slant=0:weight=100:width=100:pixelsize=12";
+  UTitleColor = "#40517e";
+  MenuDisabledColor = "#666666";
+  ClipTitleFont = "Verdana:bold:pixelsize=10";
+  MenuStyle = flat;
+  MenuTextBack = (dgradient, "#c9cac9", "#e1e1e1");
+  PTitleColor = "#ffffff";
+  IconBack = (spixmap, "QNiX-tile.png", "#000000");
+  MenuTitleBack = (dgradient, "#c9cac9", "#e1e1e1");
+  DisplayFont = "Trebuchet MS,Luxi Sans:pixelsize=12";
+  FTitleBack = (tpixmap, "QNiX-title-active.png", "#000000");
+  WindowTitleExtendSpace = 0;
+  TitleJustify = center;
+  CClipTitleColor = "rgb:61/61/61";
+  ResizebarBack = (spixmap, "QNiX-bottom.png", "#000000");
+  MenuTextColor = "#000000";
+  ClipTitleColor = black;
+  IconTitleBack = "rgb:50/5a/5e";
+  HighlightTextColor = "#000000";
+  IconTitleColor = white;
+  MenuTitleFont = "sans serif:slant=0:weight=100:width=100:pixelsize=12";
+  MenuTitleColor = "#000000";
+}

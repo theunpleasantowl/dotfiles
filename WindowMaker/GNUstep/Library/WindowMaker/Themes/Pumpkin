@@ -1,0 +1,56 @@
+{
+  FrameBorderColor = "#000000";
+  FTitleColor = "#ffffff";
+  MenuTitleBack = (dgradient, "#de7600", "#de9e43");
+  MenuDisabledColor = "#7f7f7f";
+  IconTitleBack = "#000000";
+  FTitleBack = (dgradient, "#de7600", "#de9e43");
+  ClipTitleFont = "Adobe Helvetica:slant=0:weight=200:width=100:pixelsize=10";
+  ClipTitleColor = "#000000";
+  WaitCursor = (
+    bitmap,
+    "~/GNUstep/Library/WindowMaker/Themes/Lumen_Blue.themed/dot_wait.xbm",
+    "~/GNUstep/Library/WindowMaker/Themes/Lumen_Blue.themed/dot_wait_mask.xbm"
+  );
+  FrameFocusedBorderColor = "#000000";
+  IconTitleFont = "Adobe Helvetica:slant=0:weight=80:width=100:pixelsize=9";
+  HighlightColor = "#ffffff";
+  WindowTitleFont = "Adobe Helvetica:slant=0:weight=200:width=100:pixelsize=12";
+  MenuTextBack = (solid, "rgb:aa/aa/aa");
+  LargeDisplayFont = "Adobe Helvetica:slant=0:weight=80:width=100:pixelsize=24";
+  ResizeCursor = (
+    bitmap,
+    "~/GNUstep/Library/WindowMaker/Themes/Lumen_Blue.themed/dot_resize.xbm",
+    "~/GNUstep/Library/WindowMaker/Themes/Lumen_Blue.themed/dot_resize_mask.xbm"
+  );
+  CClipTitleColor = "#616161";
+  MoveCursor = (
+    bitmap,
+    "~/GNUstep/Library/WindowMaker/Themes/Lumen_Blue.themed/dot_move.xbm",
+    "~/GNUstep/Library/WindowMaker/Themes/Lumen_Blue.themed/dot_move_mask.xbm"
+  );
+  MenuStyle = flat;
+  ResizebarBack = (solid, "rgb:aa/aa/aa");
+  IconTitleColor = "#ffffff";
+  TitleJustify = center;
+  MenuTextColor = "#000000";
+  MenuTextExtendSpace = "-1";
+  PTitleBack = (solid, gray40);
+  IconBack = (hgradient, "#c78b22", "#e08849");
+  MenuTitleColor = "#ffffff";
+  UTitleColor = "#000000";
+  MenuTitleFont = "Adobe Helvetica:slant=0:weight=200:width=100:pixelsize=12";
+  UTitleBack = (dgradient, "#de7600", "#de9e43");
+  WindowTitleExtendSpace = "-1";
+  NormalCursor = (builtin, left_ptr);
+  PTitleColor = "#ffffff";
+  MenuTitleExtendSpace = "-1";
+  MenuTextFont = "Adobe Helvetica:slant=0:weight=80:width=100:pixelsize=12";
+  WorkspaceBack = (
+    fpixmap,
+    "/home/nep/Pictures/Wallpapers/Anime Wallpapers/Konachan.com - 253524 autumn blush brown_hair chibi halloween pumpkin short_hair tagme_(artist) touhou yasaka_kanako yellow_eyes.jpg",
+    "#505075"
+  );
+  FrameSelectedBorderColor = "#ffffff";
+  HighlightTextColor = "#000000";
+}

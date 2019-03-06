@@ -1,0 +1,33 @@
+I originally made this blue theme to go with KDE's Polyester theme (while 
+not really intending it to look like Polyester itself), but it should look 
+fine with anything with the same general color scheme. Having said this, I 
+want to make some different color variations to go with different 
+schemes/desktops/iconsets. I have about 4 or 5 in mind, and hopefully 
+they'll become available when I get the time to finish them.
+
+This theme also needs the Ubuntu title font to work correctly, although if 
+you don't use Ubuntu or don't like this font it is easily replaceable 
+using WPrefs or wmakerconf (non-english speakers may especially want to do this,
+because this font currently does not render most non-US ascii characters).
+
+To use the Alt-Tab switchpanel image, copy swback.png to 
+~/GNUstep/Library/WindowMaker/Pixmaps (again, this is under Debian/Ubuntu; 
+your distro may be different).
+
+Here are a few suggested color schemes for dockapps. Just right-click on the 
+border of the dockapp, select "Settings" from the menu, then select the 
+appropriate lines below with your mouse and paste them (with a middle-click) 
+into the top text entry box labeled "Application path and arguments"
+
+For wmmixer:
+/usr/bin/wmmixer -w -b #083875 -L #92B7E1 -l #F0F2F7
+
+For wmcalclock:
+/usr/bin/wmCalClock -tc white -bc #083875
+
+...then just kill the dockapps and double-click to restart them (make sure 
+you've put them on the dock or the clip first). See their respective man 
+pages for more details. This may sound complicated or annoying if you're not 
+used to it, but it's very simple once you get the hang of it.
+
+Enjoy...
