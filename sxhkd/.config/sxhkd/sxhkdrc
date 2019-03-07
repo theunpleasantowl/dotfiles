@@ -65,7 +65,11 @@ super + y
 
 # toggle gaps between windows
 super + g
-	~/.config/bspwm/bspscripts/gap.sh
+	~/.config/bspwm/bspscripts/gap.sh tog
+super + minus
+	~/.config/bspwm/bspscripts/gap.sh dec
+super + equal
+	~/.config/bspwm/bspscripts/gap.sh inc
 
 # swap the current node and the biggest node
 #super + g
