@@ -18,7 +18,7 @@
 *.color7:     #BFBFBF
 *.color15:    #E6E6E6
 URxvt*depth: 32
-!URxvt*background: rgba:2800/2A00/3600/C400
+URxvt*background: rgba:2800/2A00/3600/C400
 
 ! ===== URxvt ====
 ! copy and paste $XA_CLIPBOARD
