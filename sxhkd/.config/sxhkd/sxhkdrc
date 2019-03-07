@@ -8,7 +8,7 @@ Print
 control + @Print
 	screensnap crop
 super + alt + c
-	qrsend $(rofi -dmenu)
+	xclip -selection clipboard -o | qrsend -
 
 # Lock System
 ctrl + alt + Delete
