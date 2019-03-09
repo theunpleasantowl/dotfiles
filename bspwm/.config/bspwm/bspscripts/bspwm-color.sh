@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 . "${HOME}/.cache/wpgtk.color"
 
 bspc config normal_border_color "$color14"
