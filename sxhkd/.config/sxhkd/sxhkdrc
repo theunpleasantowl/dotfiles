@@ -8,7 +8,8 @@ Print
 control + @Print
 	screensnap crop
 super + alt + c
-	xclip -selection clipboard -o | qrsend -
+	qrsend "$(xclip -se c -o)"
+	#xclip -se c -o | qrsend
 
 # Lock System
 ctrl + alt + Delete
