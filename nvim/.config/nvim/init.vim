@@ -21,14 +21,14 @@ nmap ga <Plug>(EasyAlign)
 
 " Latex Live Preview
 Plug 'donRaphaco/neotex', { 'for': 'tex' }
-nnoremap <C-p> :NeoTex
+autocmd FileType tex nnoremap <C-p> :NeoTex<cr>
 
 " Programming Syntax Checking
 Plug 'vim-syntastic/syntastic'
 
 " Markdown Vim Mode
 Plug 'plasticboy/vim-markdown', {'for': 'md'}
-nnoremap <C-p> :MarkdownPreview
+autocmd FileType markdown nnoremap <C-p> :MarkdownPreview <cr>
 
 " LanguageClient-neovim
 Plug 'autozimu/LanguageClient-neovim', {
