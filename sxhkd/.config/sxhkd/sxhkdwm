@@ -19,17 +19,17 @@ super + t
 	urxvt
 super + n
 	urxvt -g 110x50 -e ncmpcpp
-super +  m
+super + m
 	mpv --player-operation-mode=pseudo-gui
-super +  e
+super + e
 	thunar
 XF86Calculator
 	galculator
 
 # rofi launcher
-super + {r, @space}
+super + {@space}
 	rofi -show drun -show-icons
-super + w
+super + alt + w
 	cd ~/Pictures/Wallpapers/ && \
 	feh --bg-fill "$(find * | rofi -dmenu)"
 #super + alt +
