@@ -28,9 +28,10 @@ padding-left= 1
 padding-right = 1
 module-margin-left=2
 
-font-0 = xos4 Terminus:size=8:antialias=false;0
-font-1 = MaterialIcons:size=12:antialias=false;3
-font-2 = Source Han Sans Medium:size=10;0
+font-0 = xos4 Terminus:size=8
+font-1 = Font Awesome 5 Free:pixelsize=10:antialias=false;0
+font-2 = Font Awesome 5 Free Solid:pixelsize=10:antialias=false;0
+font-3 = Source Han Sans Medium:size=10;0
 
 modules-left = mpd
 modules-center= bspwm
@@ -65,16 +66,16 @@ label-separator-foreground = ${colors.foreground-alt}
 
 [module/mpd]
 type = internal/mpd
-format-online = <icon-prev> <icon-stop> <toggle> <icon-next>  <icon-repeat> <icon-random>  <bar-progress> <label-time>  <label-song>
+format-online = <icon-prev> <icon-stop> <toggle> <icon-next> <icon-repeat> <icon-random>  <bar-progress> <label-time>  <label-song>
 label-offline = 🎜 mpd is offline
 
-icon-play  = 
-icon-pause = 
-icon-stop  = 
-icon-prev  = 
-icon-next  = 
-icon-random = 
-icon-repeat = 
+icon-play  = 
+icon-pause = 
+icon-stop  = 
+icon-prev  = 
+icon-next  = 
+icon-random = 
+icon-repeat = 
 
 toggle-on-foreground = ${colors.primary}
 toggle-off-foreground = ${colors.foreground}
@@ -141,9 +142,9 @@ ramp-volume-3 = 
 type = internal/xbacklight
 format = <ramp> <bar>
 
-ramp-0 = 
-ramp-1 = 
-ramp-2 = 
+ramp-0 = 
+ramp-1 = 
+ramp-2 = 
 
 bar-width = 10
 bar-indicator = |
@@ -169,7 +170,7 @@ vailable tags:
 ;   <ramp-load>
 ;   <ramp-coreload>
 format = <label>
-format-prefix = " "
+format-prefix = " "
 
 ; Available tokens:
 ;   %percentage% (default) - total cpu load averaged over all cores
@@ -182,7 +183,7 @@ label = "%percentage%%"
 [module/memory]
 type = internal/memory
 format = <label>
-format-prefix = " "
+format-prefix = " "
 
 [module/battery]
 type = internal/battery
@@ -215,5 +216,5 @@ animation-charging-framerate = 750
 
 [module/date]
 type = internal/date
-date =  %%{F#99}%Y-%m-%d%%{F-}  %%{F#fff}%l:%M%p%%{F-}
+date =  %%{F#99}%Y-%m-%d%%{F-}  %%{F#fff}%l:%M%p%%{F-}
 date-alt = %%{F#fff}%A, %d %B %Y  %%{F#fff}%H:%M%%{F#666}:%%{F#fba922}%S%%{F-}
