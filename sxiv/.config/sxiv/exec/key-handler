@@ -15,6 +15,6 @@ do
         "C-w")
                 feh --bg-fill "$file" ;;
         "C-d")
-                mv "$file" ~/.local/share/Trash ;;
+                mv "$file" ~/.local/share/Trash/files ;;
         esac
 done
