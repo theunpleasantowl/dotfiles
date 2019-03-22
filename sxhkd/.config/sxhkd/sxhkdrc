@@ -33,6 +33,8 @@ super + {r, @space}
 super + alt + w
 	cd ~/Pictures/Wallpapers/ && \
 	feh --bg-fill "$(find * | rofi -dmenu)"
+#super + alt + h
+#	qmenu_hud
 #super + alt +
 #	rofi -show window
 
