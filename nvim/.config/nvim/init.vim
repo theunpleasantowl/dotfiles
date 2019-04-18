@@ -30,16 +30,6 @@ Plug 'vim-syntastic/syntastic'
 Plug 'plasticboy/vim-markdown', {'for': 'md'}
 autocmd FileType markdown nnoremap <C-p> :MarkdownPreview <cr>
 
-" LanguageClient-neovim
-Plug 'autozimu/LanguageClient-neovim', {
-    \ 'branch': 'next',
-    \ 'do': 'bash install.sh',
-    \ }
-
-" (Optional) Multi-entry selection UI.
-Plug 'junegunn/fzf'
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-
 " Markdown Preview
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }}
 
