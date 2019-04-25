@@ -32,7 +32,7 @@ super + {r, @space}
 	rofi -show drun -show-icons
 super + alt + w
 	cd ~/Pictures/Wallpapers/ && \
-	feh --bg-fill "$(find * | rofi -dmenu)"
+	find . -maxdepth 2 -print0 | xargs -0 sxiv -t
 #super + alt + h
 #	qmenu_hud
 #super + alt +
