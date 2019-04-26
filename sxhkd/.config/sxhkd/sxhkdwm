@@ -30,8 +30,8 @@ XF86Calculator
 super + {@space}
 	rofi -show drun -show-icons
 super + alt + w
-	cd ~/Pictures/Wallpapers/ && \
-	find . -maxdepth 2 -print0 | xargs -0 sxiv -t
+	find -L ~/Pictures/Wallpapers/ -maxdepth 2 -type f -iregex '.*\(jpe?g\|bmp\|png\|gif\)$' \
+	-print0 | xargs -0 sxiv -t
 #super + alt +
 #	rofi -show window
 
