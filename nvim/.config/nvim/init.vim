@@ -7,11 +7,14 @@
 :  autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
 :augroup END
 
-" Automatically deletes all trailing whitespace on save.
+" Automatically deletes all trailing whitespace on save
 autocmd BufWritePre * %s/\s\+$//e
 
 " Interactive Find-Replace with Visual Block as input
 vnoremap <C-r> "hy:%s/<C-r>h//gc<left><left><left>
+
+" <Ctrl-l> redraws the screen and removes any search highlighting
+nnoremap <silent> <C-l> :nohl<CR><C-l>
 
 "Misc Options
 set mouse=a
@@ -24,7 +27,7 @@ let g:netrw_banner = 0
 "== PLUGINS ==
 call plug#begin('~/.local/share/nvim/site/plugged')
 
-" A simple, easy-to-use Vim alignment plugin.
+" A simple, easy-to-use Vim alignment plugin
 Plug 'junegunn/vim-easy-align'
 
 " Start interactive EasyAlign in visual mode (e.g. vipga)
