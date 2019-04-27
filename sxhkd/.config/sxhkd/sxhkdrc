@@ -31,8 +31,7 @@ XF86Calculator
 super + {r, @space}
 	rofi -show drun -show-icons
 super + alt  w
-	find -L ~/Pictures/Wallpapers/ -maxdepth 2 -type f -iregex '.*\(jpe?g\|bmp\|png\|gif\)$' \
-	-print0 | xargs -0 sxiv -t
+	rofi-wallpaper
 #super + alt + h
 #	qmenu_hud
 #uper + alt +
