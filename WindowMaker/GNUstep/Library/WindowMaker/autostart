@@ -39,3 +39,4 @@ if ! pgrep -x "redshiftgui" > /dev/null; then
 fi
 # Touchpad (remove?)
 xset m 20/10 4
+
