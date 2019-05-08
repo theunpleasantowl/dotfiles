@@ -21,11 +21,9 @@ URxvt*depth: 32
 URxvt*background: rgba:2800/2A00/3600/C400
 
 ! ===== URxvt ====
-! copy and paste $XA_CLIPBOARD
-URxvt*clipboard.copycmd:  xclip -in -sel clip
-URxvt*clipboard.pastecmd: xclip -out -sel clip
 
 ! general
+URxvt.print-pipe: "cat > /dev/null"
 URxvt.scrollBar: false
 URxvt.geometry: 80x24
 URxvt.font: xft:xos4 Terminus:size=12
@@ -36,52 +34,26 @@ URxvt.keysym.C-M-4: command:\033]50;-xos4-terminus-medium-r-normal-*-22-*-*-*-*-
 URxvt.keysym.C-M-5: command:\033]50;-xos4-terminus-medium-r-normal-*-24-*-*-*-*-*-*-*\007
 URxvt.keysym.C-M-6: command:\033]50;-xos4-terminus-medium-r-normal-*-28-*-*-*-*-*-*-*\007
 URxvt.keysym.C-M-7: command:\033]50;-xos4-terminus-medium-r-normal-*-32-*-*-*-*-*-*-*\007
-URxvt.keysym.C-M-0: command:\033]710;xft:Mono:size=10:antialias=true\007
-
-! clipboard
-! update clipboard whenever primary gets updated
-URxvt.clipboard.autocopy: true
-URxvt.keysym.M-c: perl:clipboard:copy
-URxvt.keysym.M-v: perl:clipboard:paste
-URxvt.keysym.M-C-v: perl:clipboard:paste_escaped
 URxvt.secondaryScreen: 1
 URxvt.secondaryScroll: 0
 URxvt.secondaryWheel: 1
+URxvt*scrollTtyOutput: false
+URxvt*scrollWithBuffer: true
+URxvt*scrollTtyKeypress: true
+
+! IME Support
 URxvt.inputMethod: ibus
 URxvt.preeditType: OverTheSpot
 
 ! extensions
-URxvt*perl-lib: 	$HOME/.urxvt/perl
-URxvt*perl-ext-common: default,matcher,clipboard,keyboard-select,url-select,resize-font
-URxvt*charClass:		33:48,35:48,37:48,43:48,45-47:48,64:48,95:48,126:48
-URxvt*url-select.launcher:  firefox
-URxvt*url-select.underline: true
-URxvt*url-select.autocopy:  true
-URxvt*url-select.button:    1
-URxvt*matcher.button: 	    1
-URxvt*keysym.M-u: 	perl:url-select:select_next
+URxvt*perl-ext-common: default,url-select,tabbed,resize-font
+URxvt.keysym.M-u: perl:url-select:select_next
+URxvt.url-select.launcher: /usr/bin/xdg-open
+URxvt.url-select.underline: true
 URxvt*keysym.M-c: 	perl:clipboard:copy
-URxvt**keysym.M-v: 	perl:clipboard:paste
-URxvt*keysym.M-Up: 	perl:font-size:increase
-URxvt*keysym.M-Down: 	perl:font-size:decrease
-URxvt*keysym.M-C-Up: 	perl:font-size:incglobal
-URxvt*keysym.M-C-Down: 	perl:font-size:decglobal
-URxvt*keysym.M-equal: 	perl:font-size:reset
-URxvt*keysym.M-slash: 	perl:font-size:show
-URxvt*keysym.M-a: 	perl:keyboard-select:activate
-URxvt*keysym.M-s: 	perl:keyboard-select:search
-URxvt*tabbed.new-button: false
-URxvt*tabbed.tabbar-fg: 7
-URxvt*tabbed.tabbar-bg: 0
-URxvt*tabbed.tab-fg: 	7
-URxvt*tabbed.tab-bg: 	5
-URxvt*tabbed.tabcmds.1: N|mksh
-URxvt*tabbed.tabcmds.2: R|root|su -
-URxvt*tabbed.tabcmds.3: F|nnn|nnn
-URxvt*tabbed.tabcmds.4: E|vi|vi
-URxvt*tabbed.tabcmds.5: M|mutt|neomutt
-URxvt*tabbed.tabcmds.6: H|htop|htop
-URxvt*session: 		N
+URxvt*keysym.M-v: 	perl:clipboard:paste
+URxvt.keysym.C-Down:  resize-font:smaller
+URxvt.keysym.C-Up:    resize-font:bigger
 
 ! Xclock colors.
 XClock*foreground: #6D6168
