@@ -31,7 +31,7 @@ XF86Calculator
 super + {r, @space}
 	rofi -show drun -show-icons
 super + alt  w
-	rofi-wallpaper
+	sxiv-wallpaper
 #super + alt + h
 #	qmenu_hud
 #uper + alt +

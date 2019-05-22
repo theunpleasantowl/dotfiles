@@ -30,7 +30,7 @@ XF86Calculator
 super + {@space}
 	rofi -show drun -show-icons
 super + alt + w
-	rofi-wallpaper
+	sxiv-wallpaper
 #super + alt +
 #	rofi -show window
 
