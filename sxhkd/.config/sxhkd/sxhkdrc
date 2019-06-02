@@ -29,7 +29,7 @@ XF86Calculator
 
 # rofi launcher
 super + {r, @space}
-	rofi -show drun -show-icons
+	rofi -show drun
 super + alt  w
 	sxiv-wallpaper
 #super + alt + h
