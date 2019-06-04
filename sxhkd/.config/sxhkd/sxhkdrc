@@ -32,6 +32,8 @@ super + {r, @space}
 	rofi -show drun
 super + alt  w
 	sxiv-wallpaper
+super + v
+	rofi -modi "clipboard:greenclip print" -show clipboard -run-command '{cmd}'
 #super + alt + h
 #	qmenu_hud
 #uper + alt +

@@ -14,10 +14,14 @@
 #
 # This file must be executable.
 # Stuff I Need
-mpd &
-sxhkd -c ~/.config/sxhkd/sxhkdwm &
-if ! pgrep -x "clipit" > /dev/null; then
-	clipit &
+if ! pgrep -x "mpd" > /dev/null; then
+	mpd &
+fi
+if ! pgrep -x "sxhkd" > /dev/null; then
+	sxhkd -c ~/.config/sxhkd/sxhkdwm &
+fi
+if ! pgrep -x "greenclip daemon" > /dev/null; then
+	greenclip daemon &
 fi
 if ! pgrep -x "xfce4-power-manager" > /dev/null; then
         xfce4-power-manager &
