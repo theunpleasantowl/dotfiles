@@ -20,7 +20,7 @@ fi
 if ! pgrep -x "sxhkd" > /dev/null; then
 	sxhkd -c ~/.config/sxhkd/sxhkdwm &
 fi
-if ! pgrep -x "greenclip daemon" > /dev/null; then
+if ! pgrep -x "greenclip" > /dev/null; then
 	greenclip daemon &
 fi
 if ! pgrep -x "xfce4-power-manager" > /dev/null; then

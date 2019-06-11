@@ -1,6 +1,6 @@
 #!/bin/sh
 
-if ! pgrep -x "greenclip daemon" > /dev/null; then
+if ! pgrep -x "greenclip" > /dev/null; then
 	greenclip daemon &
 fi
 if ! pgrep -x "xfce4-power-manager" > /dev/null; then

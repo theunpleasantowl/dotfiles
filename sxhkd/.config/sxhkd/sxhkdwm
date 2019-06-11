@@ -7,8 +7,12 @@ Print
 	screensnap
 control + @Print
 	screensnap crop
-super + c
-	qrsend $(rofi -dmenu)
+super + alt + c
+	qrsend "$(xclip -se c -o)"
+
+# Light System
+XF86MonBrightness{Up,Down}
+	light -{A,U} 5
 
 # Lock System
 ctrl + alt + Delete
@@ -19,26 +23,28 @@ super + t
 	urxvt
 super + n
 	urxvt -g 110x50 -e ncmpcpp
-super + m
+super +  m
 	mpv --player-operation-mode=pseudo-gui
-super + e
+super +  e
 	thunar
 XF86Calculator
 	galculator
 
 # rofi launcher
-super + {@space}
+super + {r, @space}
 	rofi -show drun
-super + alt + w
+super + alt  w
 	sxiv-wallpaper
 super + v
 	rofi -modi "clipboard:greenclip print" -show clipboard -run-command '{cmd}'
+#super + alt + h
+#	qmenu_hud
 #super + alt +
 #	rofi -show window
 
 # mpd controls
 XF86Audio{Prev,Next,Play}
-	notify_mpd -{p,n,t}
+	mpc {prev,next,toggle}
 
 # make sxhkd reload its configuration files:
 super + Escape
