@@ -44,7 +44,7 @@ super + v
 
 # mpd controls
 XF86Audio{Prev,Next,Play}
-	mpc {prev,next,toggle}
+	notify_mpd -{p,n,t}
 
 # make sxhkd reload its configuration files:
 super + Escape
