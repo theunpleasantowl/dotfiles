@@ -2,4 +2,5 @@ nvim/.config/nvim/.netrwhist
 mpd/.config/mpd/state
 mpd/.config/mpd/pid
 mpd/.config/mpd/database
+systemd/.config/systemd/user/default.target.wants/
 WindowMaker/GNUstep/Library/WindowMaker/CachedPixmaps/
