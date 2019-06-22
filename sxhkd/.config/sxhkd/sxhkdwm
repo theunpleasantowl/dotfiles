@@ -5,8 +5,8 @@
 # Bin System
 Print
 	screensnap
-control + @Print
-	screensnap crop
+@Print + {ctrl,alt}
+	screensnap {crop,window}
 super + alt + c
 	qrsend "$(xclip -se c -o)"
 
