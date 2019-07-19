@@ -31,7 +31,7 @@ XF86Calculator
 	galculator
 
 # rofi launcher
-super + {r, @space}
+super + {@space}
 	rofi -show drun
 super + alt  w
 	sxiv-wallpaper
