@@ -2,9 +2,9 @@
   DontLinkWorkspaces = NO;
   FrameBorderColor = "#000000";
   LTCMaximizeKey = "Mod4+H";
-  MenuDisabledColor = gray40;
+  MenuDisabledColor = gray60;
   MoveToWorkspace9Key = "Shift+Mod1+9";
-  IconTitleBack = white;
+  IconTitleBack = "#543447";
   PixmapPath = (
     "~/GNUstep/Library/WindowMaker/Pixmaps",
     "~/GNUstep/Library/WindowMaker/Backgrounds",
@@ -14,7 +14,7 @@
     "/usr/local/share/pixmaps",
     "/usr/share/pixmaps"
   );
-  FTitleBack = (dgradient, "rgb:21/00/05", "rgb:90/00/30");
+  FTitleBack = (dgradient, "rgb:90/69/8e", "rgb:18/00/00");
   MaximizeKey = "Mod4+Up";
   ClipTitleFont = "Verdana:bold:pixelsize=10";
   MoveToWorkspace7Key = "Shift+Mod1+7";
@@ -39,6 +39,7 @@
   WindowSnapping = YES;
   KeepOnTopKey = "Mod4+A";
   AutoArrangeIcons = YES;
+  ClipTitleColor = "rgb:79/96/cf";
   MoveTo12to6Head = None;
   WaitCursor = (
     bitmap,
@@ -51,8 +52,9 @@
   WrapAppiconsInDock = NO;
   RunKey = "Mod4+R";
   LHMaximizeKey = "Mod1+Mod4+Left";
+  RootMenuKey = "Mod4+F12";
   MoveToWorkspace6Key = "Shift+Mod1+6";
-  ResizebarBack = (dgradient, "rgb:90/90/90", "rgb:c0/c0/c0");
+  ResizebarBack = (dgradient, "rgb:59/6d/8e", "rgb:00/00/00");
   MoveToWorkspace10Key = "Shift+Mod1+0";
   DisplayFont = "Trebuchet MS,Luxi Sans:pixelsize=12";
   BHMaximizeKey = "Mod1+Mod4+Down";
@@ -65,21 +67,23 @@
   THMaximizeKey = "Mod1+Mod4+Up";
   ToggleKbdModeKey = None;
   DragMaximizedWindow = RestoreGeometry;
-  MenuTextBack = (dgradient, "rgb:b0/b0/b0", "rgb:60/60/60");
+  MenuTextBack = (dgradient, "rgb:38/10/10", "rgb:8e/59/7e");
   CycleWorkspaces = YES;
   SingleClickLaunch = YES;
+  MenuTextColor = white;
+  IconBack = (mdgradient, "rgb:18/34/54", "rgb:28/45/69", "rgb:08/24/20");
   AntialiasedText = NO;
   MoveToWorkspace5Key = "Shift+Mod1+5";
   WindowTitleExtendSpace = "-1";
   NewStyle = old;
+  WindowListKey = "Mod4+F11";
   IconSize = 72;
   MenuTextFont = "Trebuchet MS,sans serif:pixelsize=12";
   NoWindowOverIcons = YES;
-  MenuTitleBack = (dgradient, "rgb:90/00/30", "rgb:21/00/05");
+  MenuTitleBack = (dgradient, "rgb:90/69/8e", "rgb:18/00/00");
   SnapToTopMaximizesFullscreen = YES;
   CloseKey = "Mod4+W";
   MoveToWorkspace3Key = "Shift+Mod1+3";
-  CClipTitleColor = gray30;
   MoveCursor = (
     bitmap,
     "~/GNUstep/Library/WindowMaker/Themes/Lumen_Blue.themed/dot_move.xbm",
@@ -96,10 +100,10 @@
     "/usr/share/pixmaps"
   );
   ModifierKey = Mod4;
-  PTitleBack = (dgradient, "rgb:51/50/55", "rgb:80/80/80");
+  PTitleBack = (dgradient, "rgb:50/29/4e", "rgb:00/00/00");
   MenuTextExtendSpace = "-1";
-  UTitleColor = gray20;
-  UTitleBack = (dgradient, "rgb:90/90/90", "rgb:c0/c0/c0");
+  UTitleColor = gray;
+  UTitleBack = (dgradient, "rgb:59/6d/8e", "rgb:00/00/00");
   MoveToWorkspace4Key = "Shift+Mod1+4";
   RTCMaximizeKey = "Mod4+J";
 }
