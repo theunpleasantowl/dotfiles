@@ -1,6 +1,7 @@
 # ~/.bashrc
 #
 #set -o vi
+export EDITOR='vim'
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
@@ -17,9 +18,7 @@ fi
 
 
 #Aliases
-alias vim="nvim"
 alias b="cd .. && ls -a"
 n() { cd "$1" && ls -la; }
 alias t="tmux"
-alias p="pakku"
-alias sshsocks="ssh -D 1080 -f -C -q -N -p 22"
+#alias sshsocks="ssh -D 1080 -f -C -q -N -p 22"
