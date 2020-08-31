@@ -29,10 +29,10 @@
 <!-- GEOMETRY -->
 
 <!-- Focused window -->
-<frame_geometry name="normal" title_scale="medium" rounded_top_left="1" rounded_top_right="1">
-	<distance name="left_width" value="0" />
-	<distance name="right_width" value="0" />
-	<distance name="bottom_height" value="0" />
+<frame_geometry name="normal" title_scale="medium" rounded_top_left="4" rounded_top_right="4">
+	<distance name="left_width" value="1" />
+	<distance name="right_width" value="1" />
+	<distance name="bottom_height" value="3" />
 	<distance name="left_titlebar_edge" value="5" />
 	<distance name="right_titlebar_edge" value="5" />
 	<distance name="title_vertical_pad" value="4" />
@@ -42,7 +42,7 @@
 </frame_geometry>
 
 <!-- Unfocused window -->
-<frame_geometry name="normal_unfocused" title_scale="medium" rounded_top_left="1" rounded_top_right="1" parent="normal" >
+<frame_geometry name="normal_unfocused" title_scale="medium" rounded_top_left="4" rounded_top_right="4" parent="normal" >
 	<distance name="left_width" value="0" />
 	<distance name="right_width" value="0" />
 	<distance name="bottom_height" value="0" />
@@ -580,7 +580,7 @@
 	<button function="unstick" state="pressed"><draw_ops></draw_ops></button>
 </frame_style>
 
-<frame_style name="dialog_focused" geometry="nobuttons">
+<frame_style name="dialog_focused" geometry="normal">
 	<piece position="entire_background" draw_ops="entire_background_focused" />
 	<piece position="titlebar" draw_ops="rounded_titlebar_focused" />
 	<piece position="title" draw_ops="title_focused" />
@@ -614,7 +614,7 @@
 	<button function="unstick" state="pressed"><draw_ops></draw_ops></button>
 </frame_style>
 
-<frame_style name="dialog_unfocused" geometry="nobuttons">
+<frame_style name="dialog_unfocused" geometry="normal_unfocused">
 	<piece position="entire_background" draw_ops="entire_background_unfocused" />
 	<piece position="titlebar" draw_ops="titlebar_fill_unfocused" />
 	<piece position="title" draw_ops="title_unfocused" />
